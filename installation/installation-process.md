@@ -5,13 +5,13 @@ You've finished setting up all the OpenCore files on your USB drive. The series 
 * Insert the USB drive and start your computer up. You will need to use Boot Options to select the USB drive, and may need to adjust other BIOS options and settings.
 * Then continue to boot from the USB drive. The computer's built-in firmware reads the OpenCore EFI files from the USB drive and injects the other software (also on the USB drive) necessary to run macOS.
 * When that completes, OpenCore displays a GUI listing the choices of disk partitions to boot from.
-* Select the macOS installer partition and let the computer start up macOS (it's just the installer, not the full OS.) 
-* Use Disk Utility to format your computer's internal hard drive. 
+* Select the macOS installer partition and let the computer start up macOS (it's just the installer, not the full OS.)
+* Use Disk Utility to format your computer's internal hard drive.
 * Run the macOS Installer to copy all the macOS files to the macOS partition you just created on the internal drive.
 * Reboot, and tell the OpenCore GUI to start up the macOS partition on the internal drive
 * Finally, perform a suite of post-install steps to make the OpenCore and other files permanently reside on the internal hard drive. At that point, your computer should boot up the macOS partition by default.
 
-Note that each of these steps is an opportunity for something to go wrong. You will need to be prepared to read and re-read this Guide, and Google for answers. 
+Note that each of these steps is an opportunity for something to go wrong. You will need to be prepared to read and re-read this Guide, and Google for answers.
 
 ## A Few Last Steps Before Booting
 
