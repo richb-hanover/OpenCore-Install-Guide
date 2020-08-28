@@ -2,22 +2,26 @@
 
 * Supported version: 0.6.0
 
-To setup OpenCore’s folder structure, you’ll want to grab the EFI folder found in [OpenCorePkg's releases](https://github.com/acidanthera/OpenCorePkg/releases/). Regarding DEBUG versus RELEASE version:
+To setup OpenCore’s folder structure, grab the EFI folder from [OpenCorePkg's releases](https://github.com/acidanthera/OpenCorePkg/releases/). Regarding DEBUG versus RELEASE version:
 
 * **DEBUG**: Can greatly help with debugging boot issues, however can add some noticeable delay to boot times. Once installed you can easily transition to RELEASE
 * **RELEASE**: Much snappier boot times, however virtually no useful DEBUG info is provided in OpenCore making troubleshooting much more difficult.
 
-And once downloaded, place the EFI folder(from OpenCorePkg) on the root of your EFI partition.
+Place the downloaded EFI folder (from OpenCorePkg) at the root of your EFI partition. Check the following to be sure the spelling and capitalization are correct:
+
+* The EFI partition must have a top-level folder named **EFI** (you may need to change the name of the downloaded folder.)
+* That top-level folder must contain folders named **BOOT** and **OC**
+* Those folders should substantially match the image below
 
 **Note**:
 
-* Windows users: This will already be done on the `BOOT` USB drive created by MakeInstall
+* Windows users: MakeInstall will already have done this on the `BOOT` USB drive
 * Linux users: This is the `OPENCORE` partition we created earlier
   * Note that Method 1 only creates 1 partition, while Method 2 creates 2 partitions
 
 ![base EFI folder](../images/installer-guide/opencore-efi-md/base-efi.png)
 
-Now something you'll notice is that it comes with a bunch of files in `Drivers` and `Tools` folder, we don't want most of these:
+The OpenCorePkg comes with a bunch of files in `Drivers` and `Tools` folder. You don't need most of these:
 
 * **Remove from Drivers:**
   * AudioDxe.efi
@@ -40,14 +44,15 @@ Now something you'll notice is that it comes with a bunch of files in `Drivers` 
     * Pretty obvious when you need this, USB keyboard and mouse users don't need it
     * Reminder: PS2 ≠ USB
 
-* **Remove everything from Tools:**
-  * Way to many to list them all, but I recommend keeping OpenShell.efi for troubleshooting purposes
+* **Remove (almost) everything from Tools:** There are way to many to list. I recommend keeping OpenShell.efi for troubleshooting purposes
 
 A cleaned up EFI:
 
 ![Clean EFI](../images/installer-guide/opencore-efi-md/clean-efi.png)
 
-Now you can place **your** necessary firmware drivers(.efi) into the _Drivers_ folder and Kexts/ACPI into their respective folders. Please note that UEFI drivers from Clover are not supported with OpenCore!(EmuVariableUEFI, AptioMemoryFix, OsxAptioFixDrv, etc). Please see the [Clover firmware driver conversion](https://github.com/dortania/OpenCore-Install-Guide/blob/master/clover-conversion/clover-efi.md) for more info on supported drivers and those merged into OpenCore.
+The next step is to gather files and place the necessary drivers and kexts for **your** hardware into their respective folders. 
+
+> Clover users: UEFI drivers from Clover are not supported with OpenCore!(EmuVariableUEFI, AptioMemoryFix, OsxAptioFixDrv, etc). Please see the [Clover firmware driver conversion](https://github.com/dortania/OpenCore-Install-Guide/blob/master/clover-conversion/clover-efi.md) for more info on supported drivers and those merged into OpenCore.
 
 Here's what a populated EFI ***can*** look like (yours will be different):
 
