@@ -486,6 +486,7 @@ OcQuirks
 OpenCanopy
 OpenCore
 OpenCore's
+OpenCore-Install-Guide
 OpenCorePkg
 OpenCorePkg's
 OpenRuntime
@@ -596,6 +597,7 @@ Speccy
 Stompy
 StopSign-fixv
 StopSign-fixv5
+SublimeText
 Subreddit
 Sur
 Sur's
@@ -807,6 +809,7 @@ hacky
 heroImage
 heroText
 hotplug
+http
 i210
 i211
 i218
@@ -859,6 +862,7 @@ lapic
 lappie
 licensor
 linter
+localhost:8080
 lsblk
 macOS
 macOS's

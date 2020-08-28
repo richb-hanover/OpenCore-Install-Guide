@@ -30,12 +30,12 @@ Please use standard Github PRs. Some guidelines when contributing via PRs:
 * Images must be hosted locally in the repo under the `../images/` folder
 * Your PR must be spell-checked and run through a markdown lint and have all issues fixed. (See **Developing and Testing...** below.)
 * We avoid using "non-Acidanthera" tools. Generally we want to avoid use of third-party tools  - though if it's impossible otherwise, then you can link it. These tools are explicitly banned:
-    * UniBeast, MultiBeast and KextBeast
-      * We outline the reasons here: [Tonymacx86-stance](https://github.com/khronokernel/Tonymcx86-stance)
-    * TransMac
-      * Know for creating borked USB drives
-    * Niresh Installers
-      * We'd like to avoid piracy with the guides
+  * UniBeast, MultiBeast and KextBeast
+    * We outline the reasons here: [Tonymacx86-stance](https://github.com/khronokernel/Tonymcx86-stance)
+  * TransMac
+    * Know for creating borked USB drives
+  * Niresh Installers
+    * We'd like to avoid piracy with the guides
 
 ### Developing and Testing Your Edits
 
@@ -52,7 +52,7 @@ The OpenCore Install Guide has a set of tools for previewing the site as you edi
   * `npm test` (runs both tests on all files)
   * `npm run lint` and `npm run spellcheck` (to run them individually)
   * `npm run fix-lint` (Attempts to fix lint issues automatically)
-* Create a "distribution" by sending all the HTML files to the `.vuepress/dist` directory with `npm run build` 
+* Create a "distribution" by sending all the HTML files to the `.vuepress/dist` directory with `npm run build`
 
 ### Tips
 
@@ -84,4 +84,3 @@ Current known translations:
 * [Technopat](https://www.technopat.net/sosyal/konu/opencore-ile-macos-kurulum-rehberi.963661/)(Turkish)
 
 And note that these translations are subject to authors preferences, translation changes and human errors. Please keep this in mind when reading as they're no longer official Dortania guides.
-
