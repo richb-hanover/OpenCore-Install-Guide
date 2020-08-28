@@ -59,8 +59,7 @@ The OpenCore Install Guide has a set of tools for previewing the site as you edi
 Some tools that make contributing a bit easier:
 
 * [Typora](https://typora.io) for real time markdown rendering. (Win/Lin/Mac)
-* [SublimeText](https://www.sublimetext.com/) for easy and powerful mass find/replace. (Win/Lin/Mac)
-* ~~[TextMate](https://macromates.com) for easy and powerful mass find/replace.~~ (Site seems to be off the air...)
+* [TextMate](https://macromates.com) (Mac) or [SublimeText](https://www.sublimetext.com/) (Win/Lin/Mac) for easy and powerful mass find/replace. 
 * [Github Desktop](https://desktop.github.com) for more user friendly GUI. (Win/Mac)
 
 ## Contributing via Translations
